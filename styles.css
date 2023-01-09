@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    font-family: 'Averia Libre';
+}
+
+body{
+    background-color: #dcdcdc;
+}
+
+.head{
+    background-color: #a6aeae73;
+    text-align: center;
+    max-height: 1000px;
+}
+
+fieldset{
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    background-color: #f4d2d226;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10vh auto;
+}
+
+label{
+    padding: 0.5rem;
+    display: block;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #7a7a6e;
+    margin: 1rem;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.btn{
+    padding: 1vh 2vh;
+    font-size: 1rem;
+    border-radius: 3vh;
+    background: #8a86864d;
+    color: #000000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#submit{
+    margin-bottom: 2%;
+}
+
+.script{
+    background-color: #000000;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }

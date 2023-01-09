@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+      function callvalue(){
+        var n=document.getElementById("name").value;
+        var email=document.getElementById("email").value;
+        var phone=document.getElementById("phone").value;
+        var experience=document.getElementById("experience").value;
+        var skills=document.getElementById("skills").value;
+        var date=document.getElementById("date").value;
+        
+        document.writeln("YOUR INFO:<br>");
+        document.writeln("<br>Your Name: "+n+"<br>");
+        document.writeln("<br>Your Email: "+email+"<br>");
+        document.writeln("<br>Your Contact No.: "+phone+"<br>");
+        document.writeln("<br>Your Skill Set: "+skills+"<br>");
+        document.writeln("<br>Your Work Experience: "+experience+"<br>");
+        document.writeln("<br>Your Education: "+education+"<br>");
+        document.writeln("<br>Your Date of Birth: "+date+"<br>");
+        
+      }
+
+
+    </script>
+    <title>Resume Builder</title>
+  </head>
+  <body>
+    <div class="head">
+        <h1>Resume Builder</h1>
+    </div>
+    <fieldset class="Details">
+      <legend>User Details</legend>
+      <form onsubmit="callvalue()">
+          <label for="name">
+              Your name
+              <input type="text" name="name" id="name" placeholder="User's name" required>
+          </label>
+          <label for="email">
+              User's Email
+              <input type="email" name="email" id="email" placeholder="User's email" required>
+          </label>
+          <label for="phone" class="phone">
+            Contact No.
+            <input type="number" id="phone" placeholder="Contact No."required>
+        </label>
+          <label for="experience">
+              Work Experience
+              <input type="text" name="experience" id="experience" placeholder="Work Experience" required>
+          </label>
+          <label for="skills">
+            Skills
+            <input type="text" name="skills" id="skills" placeholder="Skills" required>
+        </label>
+        <label for="education">
+          Education
+          <input type="text" name="education" id="education" placeholder="Education" required>
+      </label>
+      <label for="education">
+        Date Of Birth
+        <input type="date" name="date" id="date" placeholder="Date Of Birth" required>
+    </label>
+      <button class="btn btn-primary" id="btn">Submit</button>
+      </form>
+
+  </fieldset>
+
+  </body>
+</html>
